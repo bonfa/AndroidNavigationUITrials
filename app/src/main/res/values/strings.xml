@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">NavigationComponentExample</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="last_extraction_title">Last extraction</string>
+    <string name="last_extraction_go_to_extraction_detail">To Detail</string>
+
+    <string name="extraction_detail_title">Extraction Detail</string>
+
+    <string name="extraction_archive_title">Extraction Archive</string>
+    <string name="extraction_archive_go_to_historical_extraction">To Historical</string>
+
+    <string name="historical_extraction_title">Historical Extraction</string>
+    <string name="historical_extraction_go_to_extraction_detail">To Detail</string>
+
+    <string name="generate_sextain_title">Generate Sextain</string>
+    <string name="generate_sextain_go_to_add_sextain">To Add Sextain</string>
+
+    <string name="add_sextain_title">Add Sextain</string>
+    <string name="add_sextain_go_to_sextain_numbers">To Numbers</string>
+
+    <string name="numbers_title">Numbers</string>
+
+    <string name="your_sextain_title">Your Sextain</string>
+    <string name="your_sextain_go_to_add_sextain">To Add Sextain</string>
+    <string name="your_sextain_go_to_verify_win">To Verify Win</string>
+
+    <string name="verify_win_title">Verify Win</string>
+</resources>

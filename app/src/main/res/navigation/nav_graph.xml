@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/lastExtractionFragment">
+    <fragment
+        android:id="@+id/lastExtractionFragment"
+        android:name="it.fbonfadelli.navigation.component.example.LastExtractionFragment"
+        android:label="fragment_last_extraction"
+        tools:layout="@layout/fragment_last_extraction" >
+        <action
+            android:id="@+id/show_extraction_detail_action"
+            app:destination="@id/extractionDetailFragment" >
+            <argument
+                android:name="extraction"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/extractionDetailFragment"
+        android:name="it.fbonfadelli.navigation.component.example.ExtractionDetailFragment"
+        android:label="fragment_extraction_detail"
+        tools:layout="@layout/fragment_extraction_detail" >
+        <argument
+            android:name="extraction"
+            app:argType="string"
+            android:defaultValue="NOOOOOOOOOOOOOO!" />
+    </fragment>
+    <fragment
+        android:id="@+id/extractionArchiveFragment"
+        android:name="it.fbonfadelli.navigation.component.example.ExtractionArchiveFragment"
+        android:label="fragment_extraction_archive"
+        tools:layout="@layout/fragment_extraction_archive" >
+        <action
+            android:id="@+id/action_extractionArchiveFragment_to_historicalExtractionFragment"
+            app:destination="@id/historicalExtractionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yourSextainFragment"
+        android:name="it.fbonfadelli.navigation.component.example.YourSextainFragment"
+        android:label="fragment_your_sextain"
+        tools:layout="@layout/fragment_your_sextain" >
+        <action
+            android:id="@+id/action_yourSextainFragment_to_createSextainFragment"
+            app:destination="@id/addSextainFragment" />
+        <action
+            android:id="@+id/action_yourSextainFragment_to_verifyWinFragment"
+            app:destination="@id/verifyWinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/generateSextainFragment"
+        android:name="it.fbonfadelli.navigation.component.example.GenerateSextainFragment"
+        android:label="fragment_generate_sextain"
+        tools:layout="@layout/fragment_generate_sextain" >
+        <action
+            android:id="@+id/action_generateSextainFragment_to_createSextainFragment"
+            app:destination="@id/addSextainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addSextainFragment"
+        android:name="it.fbonfadelli.navigation.component.example.AddSextainFragment"
+        android:label="fragment_add_sextain"
+        tools:layout="@layout/fragment_add_sextain" >
+        <action
+            android:id="@+id/action_createSextainFragment_to_sextainNumbersFragment"
+            app:destination="@id/sextainNumbersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sextainNumbersFragment"
+        android:name="it.fbonfadelli.navigation.component.example.SextainNumbersFragment"
+        android:label="fragment_sextain_numbers"
+        tools:layout="@layout/fragment_sextain_numbers" />
+    <fragment
+        android:id="@+id/verifyWinFragment"
+        android:name="it.fbonfadelli.navigation.component.example.VerifyWinFragment"
+        android:label="fragment_verify_win"
+        tools:layout="@layout/fragment_verify_win" />
+    <fragment
+        android:id="@+id/historicalExtractionFragment"
+        android:name="it.fbonfadelli.navigation.component.example.HistoricalExtractionFragment"
+        android:label="fragment_historical_extraction"
+        tools:layout="@layout/fragment_historical_extraction" >
+        <action
+            android:id="@+id/action_historicalExtractionFragment_to_extractionDetailFragment"
+            app:destination="@id/extractionDetailFragment" />
+    </fragment>
+</navigation>

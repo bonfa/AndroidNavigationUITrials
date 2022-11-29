@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/lastExtractionFragment"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="@string/last_extraction_title" />
+    </group>
+
+    <group
+        android:id="@+id/grp_2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/extractionArchiveFragment"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="@string/extraction_archive_title" />
+    </group>
+
+    <group
+        android:id="@+id/grp_3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/generateSextainFragment"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="@string/generate_sextain_title" />
+    </group>
+
+    <group
+        android:id="@+id/grp_4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/yourSextainFragment"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="@string/your_sextain_title" />
+    </group>
+
+</menu>
